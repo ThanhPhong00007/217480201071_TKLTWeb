@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    margin: 0;
+}
+ol, p {
+    font-size: 14px;
+    color: black;
+    padding-left: 39%;
+    margin: 0;
+}
+.khung {
+    border: 3px solid black;
+    background-color: pink;
+}
