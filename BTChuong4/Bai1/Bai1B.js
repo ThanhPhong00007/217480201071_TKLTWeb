@@ -1,0 +1,7 @@
+document.write("Hello")
+var Ten = prompt("Nhập tên của bạn ", "")
+var Lop = prompt("Nhập lớp của bạn ", "15DTH2")
+document.write("<h1>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h1>")
+document.write("<h2>KHOA CÔNG NGHỆ THÔNG TIN</h2>")
+document.write("<font size=\"14pt\" color=\"black\"><b>Lớp học : "+Lop+"</b></font><br>")
+document.write("<font size=\"14pt\" color=\"black\"><b>Họ tên sinh viên : "+Ten+"</b></font>")
