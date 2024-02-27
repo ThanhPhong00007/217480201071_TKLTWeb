@@ -1,0 +1,19 @@
+* {
+    background-color: yellow;
+}
+.tieude {
+    color: red;
+    text-align: center;
+}
+.p1 {
+    font-family: Verdana;
+    color: green;
+}
+ol {
+    font-family: Verdana;
+    color: violet;
+}
+ul {
+    font-family: Times New Roman;
+    color: blue;
+}
