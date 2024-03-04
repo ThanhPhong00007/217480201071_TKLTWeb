@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh họa đưa câu lệnh JavaScript</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var SoLuong, x;
+        var DS = new Array(100);
+        SoLuong = prompt("Nhập số lượng thiết bị văn phòng: ",5);
+        for (i=0; i<SoLuong; i++) {
+            DS[i] = prompt("Nhập tên thiết bị thứ "+ (i+1) +": ","");
+        }
+        let text = "<table>"
+            text += "<tr>"
+            text += "<th>" + "STT" + "</th>"
+            text += "<th>" + "Tên thiết bị" + "</th>"
+            text += "</tr>"
+            for (let o = 0; o < SoLuong; o++) {
+                if (DS[o].toLowerCase() === "Computer".toLowerCase()) {
+                    text += "<tr>"
+                        text += "<td>" + (o + 1) + "</td>";
+                        text += "<td>" + DS[o] + "</td>";
+                    text += "</tr>"
+                }
+            }
+        text += "</table>"
+        document.write(text)
+    </script>
+</html>

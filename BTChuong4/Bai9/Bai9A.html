@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp mảng</title>
+</head>
+<body>
+    <script>
+        var SoLuong, x;
+        var DS = new Array(100);
+        SoLuong = prompt("Nhập số lượng người: ", 5);
+        for(i=0; i<SoLuong; i++) {
+            DS[i] = prompt("Nhập vào họ tên: ","");
+        }
+        document.write("<h1>Danh sách tên vừa nhập</h1>");
+        for (x in DS) {
+            document.write(DS[x]);
+            document.write("<br>");
+        }
+        DS.sort();
+        document.write("<h1>Danh sách tên vừa sắp xếp</h1>");
+        for (x in DS.sort() ) {
+            document.write(DS[x]);
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

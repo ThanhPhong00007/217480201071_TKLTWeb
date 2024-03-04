@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh họa đưa câu lệnh JavaScript vào các phần tử.</title>
+</head>
+<body>
+    <script>
+        var x,y;
+        x = 10; y=20
+        function tong() {
+            alert("Tổng x + y: "+ ( x + y));
+        }
+    </script>
+    <form action="">
+        <p onclick="document.write('Các câu lệnh JavaScript');">HTML FORM</p>
+        <input type="button" name="DangKy" value="Đăng ký" onclick="alert('Đăng ký E-Mail')">;
+        <input type="button" name="XinChao" value="Xin Chào" onclick="alert('Hello World')">;
+        <input type="button" name="XinChao2" value="JavaScript" onclick="document.write('Wellcome to JavaScript')">;
+        <input type="button" name="Tong" value="Tổng X + Y" onclick="tong()">
+    </form>
+</body>
+</html>
