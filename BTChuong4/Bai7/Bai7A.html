@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Tính Tuổi</title>
+</head>
+<body>
+    <script>
+        var D = new Date;
+        var NamSinh, NamHienTai;
+        NamHienTai = D.getFullYear();
+        do {
+           NamSinh = prompt("Năm sinh của bạn ? :","");
+        } while(parseInt(NamSinh)>NamHienTai);
+        if (NamSinh == NamHienTai) {
+            alert("Tuổi hiện tại của bạn là: 1");
+        } else {
+            alert("Tuổi hiện tại của bạn là: "+(NamHienTai - NamSinh));
+        }
+    </script>
+</body>
+</html>
