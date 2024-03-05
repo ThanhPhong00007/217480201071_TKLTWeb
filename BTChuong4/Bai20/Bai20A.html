@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tiền</title>
+</head>
+<body style="font-family: arial; background-color: lavender;">
+    <h1>hãy nhập số lượng và đơn giá</h1>
+    Số lượng:<input type="text" name="txtSL" id="SL"><br>
+    Đơn giá: <input type="text" name="txtDG" id="DG" onkeyup="TT.value = parseFloat(SL.value) * parseFloat(DG.value)"><hr>
+    Thành tiền: <input type="text" name="txtTT" id="TT"> USD
+</body>
+</html>

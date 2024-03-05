@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi giá trị thuộc tính</title>
+</head>
+<body>
+    <script>
+        function Tong(x,y){
+           return x + y
+        }
+    </script>
+    <h2>Hãy nhập hai số và click vào nút tính tổng</h2>
+    <input type="text" name="SoHang1" id="d1"> +
+    <input type="text" name="SoHang2" id="d2"> =
+    <input type="text" name="KetQua" id="d3">
+    <input type="button" name="btnTinhTong" value="Tính tổng" onclick="d3.value = Tong(parseFloat(d1.value), parseFloat(d2.value))">
+</body>
+</html>

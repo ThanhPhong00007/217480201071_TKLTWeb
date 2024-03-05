@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi giá trị thuộc tính</title>
+</head>
+<body>
+    <script>
+        function Tong(x,y){
+           return x + y
+        }
+        function Hieu(x,y){
+           return x - y
+        }
+        function Tich(x,y){
+           return x * y
+        }
+        function Thuong(x,y){
+           return x / y
+        }
+    </script>
+    <h2>Hãy nhập hai số và click vào nút tính tổng</h2>
+    <input type="text" name="SoHang1" id="d1"> +
+    <input type="text" name="SoHang2" id="d2"> =
+    <input type="text" name="KetQua" id="d3"><br>
+    <input type="radio" name="rdoTinh" onclick="d3.value = Tong(parseFloat(d1.value), parseFloat(d2.value))">Tính Tổng (+) ;
+    <input type="radio" name="rdoTinh" onclick="d3.value = Hieu(parseFloat(d1.value), parseFloat(d2.value))">Tính Hiệu (-) ;
+    <input type="radio" name="rdoTinh" onclick="d3.value = Tich(parseFloat(d1.value), parseFloat(d2.value))">Tính Tích (x) ;
+    <input type="radio" name="rdoTinh" onclick="d3.value = Thuong(parseFloat(d1.value), parseFloat(d2.value))">Tính Thương (:)
+</body>
+</html>
